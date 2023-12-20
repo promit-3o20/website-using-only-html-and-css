@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/Curiosité logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+
+        .mag1,
+        .mag2,.mag3 {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        h2 {
+            width: 100%;
+            background-color: goldenrod;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: maroon;
+            text-align: center;
+        }
+
+        iframe {
+            width: 800px;
+            height: 900px;
+            margin: 15px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #3f2a04,
+                0 0 10px #ffd901;
+
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            background-color: rgb(24, 24, 24);
+        }
+
+        footer p {
+            color: rgb(247, 207, 107);
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 10px;
+        }
+
+        @media(max-width:500px) {
+            iframe {
+                width: 92%;
+                height: 75vh;
+            }
+        }
+
+        @media (min-width: 501px) and (max-width: 900px) {
+            iframe {
+                width: 85%;
+                height: 900px;
+            }
+
+            h2 {
+                width: 100%;
+            }
+        }
+    </style>
+    <title>Magazines</title>
+</head>
+
+<body>
+    <!-- <div class="mag"> -->
+    <div class="mag3">
+        <h2>March 22</h2>
+        <iframe src="https://drive.google.com/file/d/11abzIFAsPoISuVAO1xPAWPqkswHaZKCx/preview" allow="autoplay"></iframe>
+    </div>
+    <div class="mag2">
+        <h2>December 21</h2>
+        <iframe src="https://drive.google.com/file/d/1P1G6BQWN8c1aghVT7o04XNjgZkzxEc41/preview" allow="autoplay"></iframe>
+    </div>
+    <div class="mag1">
+        <h2>June 21</h2>
+        <iframe src="https://drive.google.com/file/d/1TpWJT1aVvtOHoc2i1XDIPm-zBXhvieng/preview"
+            allow="autoplay"></iframe>
+    </div>
+    <!-- </div> -->
+    <footer>
+        <p>Santiniketan,731235 | curiosite.socialmedia@gmail.com | &copy Curiosite Science Hub 2021</p>
+    </footer>
+</body>
+
+</html>

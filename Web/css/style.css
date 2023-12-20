@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+/* font-family: 'Allison', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Atma&display=swap');
+/* font-family: 'Atma', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* font-family: 'Libre Baskerville', serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgoldenrodyellow;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* ################## UTILITY CLASS ############### */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.headding{
+    background: goldenrod;
+    width: 100%;
+    text-align: center;
+    color: maroon;
+}
+button:hover{
+    background-color: goldenrod;
+    box-shadow: 0 0 8px #5c3c00, 0 0 8px #746201;
+
+}
+/* ################## NAVIGATION BAR ################## */
+
+.navbar input[type='checkbox'],
+.navbar .hamburger-lines{
+    display: none;
+}
+.navbar{
+    box-shadow: 0 0 8px #5c3c00,
+                0 0 8px #746201;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: rgba(218, 165, 32, 0.836);
+}
+.navbar-container{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+}
+.logo img{
+    width: 120px;
+}
+.menu-items{
+    display: flex;
+}
+.menu-items li{
+    font-size: 24px;
+    margin: 2px 2%;
+}
+.menu-items li a{
+    transition: all .3s ease 0s;
+    color: maroon;
+    font-size: 22px;
+    border-radius: 6px;
+    margin: 2px 2px;
+    padding: 3px;
+}
+.menu-items li a:hover{
+    color: rgb(65, 49, 0);
+    box-shadow: 0 0 8px #5c3c00,
+                0 0 8px #746201;
+    
+}
+/* .btn{
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(252, 200, 59);
+    transition: all .3s ease 0s;
+    font-weight: bold;
+}
+.btn a{
+    color: maroon;
+    font-size: 18px;
+}
+.btn:hover{
+    background-color: rgb(235, 180, 1);
+    box-shadow: 0 0 8px #5c3c00,
+                0 0 8px #746201; 
+} */
+
+/* ################## HEADER AREA ################## */
+
+.header-contant{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(360deg,black,transparent),url("../imgs/vb imgs/p2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.header-container h1{
+    color: rgb(255, 214, 111);
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.header-container p{
+    color: rgb(255, 214, 111);
+    font-size: 30px;
+}
+
+/* ################## BODY ################## */
+.body-container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-content1{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.body-content1 h2{
+    color: maroon;
+    font-size: 40px;
+    font-family: 'Libre Baskerville', serif;
+}
+.body-content1 img{
+    width: 300px;
+    height: 420px;
+    border: 4px solid rgb(255, 232, 101);
+    box-shadow: 0 0 10px #5c3c00,
+                0 0 10px #746201; 
+}
+.magazine{
+    padding-left: 20px;
+}
+.magazine a{
+    color: maroon;
+}
+.magazine p{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Allison', cursive;
+}
+.body-content2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 20px;
+}
+.body-content2 img{
+    width: 270px;
+    height: 380px;
+    margin: 8px ;
+    border: 2px solid rgb(255, 204, 93);
+    box-shadow: 0 0 8px #5c3c00,
+                0 0 8px #746201; 
+}
+.notice{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 40px;
+    margin-bottom: 5px;
+}
+.notice section p{
+    display: none;
+    margin-bottom: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif   ;
+}
+.notice section a{
+    color: maroon;
+}
+.notice section a:hover{
+    text-decoration: underline;
+}
+.notice button{
+    width: 80%;
+    padding: 3px 2%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 16px;
+    font-size: large;
+    color: maroon;
+    background-color: rgb(255, 200, 62);
+}
+.notice button:hover{
+    background-color: goldenrod;
+    box-shadow: 0 0 8px #5c3c00, 0 0 8px #746201;
+
+}
+.notice section:target p{
+    display: block;
+}
+
+.body-container4{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+.body-container4 p,
+.body-container4 a{
+    font-size: large;
+    font-style: italic;
+    font-family:  'Libre Baskerville', serif;
+    color: rgb(82, 2, 2);
+}
+#box-btn{
+    background-color: rgb(252, 200, 71);
+    border: none;
+    padding: 3px 2%;
+    border-radius: 8px;
+}
+.body-container4 button:hover{
+    background-color: goldenrod;
+    box-shadow: 0 0 8px #5c3c00, 0 0 8px #746201;
+
+}
+#members{
+    color: rgb(68, 0, 0);
+    text-align: center;
+    text-decoration:underline;
+}
+/* ################### FOOTER ################## */
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+}
+.social-media-icon i{
+    color: rgb(247, 207, 107);
+    margin: 5px;
+    align-items: center;
+    padding-top: 10px;
+}
+footer p{
+    color: rgb(247, 207, 107);
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+
+
+/* ########################## MEDIA QUERY ###################### */
+
+@media (max-width:500px){
+     /* navbar  */
+     .navbar{
+        background: rgba(218, 165, 32, 0.95);
+    }
+    .navbar-container input[type='checkbox'],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+    .navbar-container input[type='checkbox']{
+        position: absolute;
+        display: block;
+        height: 24px;
+        width: 32px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    }
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: rgb(82, 59, 2);
+    }
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .menu-items{
+        padding-top: 90px;
+        background: rgba(218, 165, 32, 0.884);
+        height: 100vh;
+        max-width: 280px;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform  0.5s ease-in-out;
+        box-shadow: 5px 0 10px 0 #5c3c00;
+    }
+    .menu-items li{
+        margin-bottom: 1rem ;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    .logo{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+    }
+    .navbar-container input[type='checkbox']:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line2{
+        transform: scaleX(0);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+      
+    /* header  */
+    .header-container h1{
+        font-size: 30px;
+    }
+    .header-container p{
+        font-size:20px;
+    }
+    /* body  */
+    .body-content1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .body-content1 img{
+        width: 80%;
+            
+    }
+    .magazine{
+        padding-top: 20px;
+        text-align: center;
+        padding-left: 0;
+    }
+    .magazine h2 a{
+        font-size: 70%;
+    }
+    .magazine p{
+        font-size: 25px;
+    }
+    .body-content2{
+        padding-left: 45px;
+    }
+    .body-content2 img{
+        width: 80%;
+    }
+
+    .notice{
+        flex-wrap: wrap;
+    }
+    .notice ol{
+        padding-bottom: 10px;
+    }
+
+    .body-container4{
+        display: flex;
+        flex-direction: column;
+        margin-top: 6px;
+        text-align: center;
+        font-size: 10px;
+    }
+    .body-container4 p,
+    .body-container4 a{
+        font-size: 14px;
+    }
+    /* footer  */
+    footer p{
+        font-size: 15px;
+        padding-top: 0;
+    }
+}
+@media (min-width: 501px) and (max-width: 900px){
+    /* navbar  */
+    .navbar{
+        background: rgba(218, 165, 32, 0.95);
+    }
+    .navbar-container input[type='checkbox'],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+    .navbar-container input[type='checkbox']{
+        position: absolute;
+        display: block;
+        height: 24px;
+        width: 32px;
+        top: 20px;
+        left: 12px;
+        z-index: 5;
+        opacity: 0;
+    }
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 20px;
+        left: 12px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: rgb(82, 59, 2);
+    }
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .menu-items{
+        padding-top: 90px;
+        background: rgba(218, 165, 32, 0.884);
+        height: 100vh;
+        max-width: 350px;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -80px;
+        padding-left: 70px;
+        transition: transform  0.5s ease-in-out;
+        box-shadow: 5px 0 10px 0 #5c3c00;
+    }
+    .menu-items li{
+        margin-bottom: 1rem ;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .btn{
+        margin-right:56px ;
+    }
+    .logo{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+    }
+    .navbar-container input[type='checkbox']:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line2{
+        transform: scaleX(0);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+    
+/* #############  */
+    .magazine h2{
+        font-size: 30px;
+    }
+    .magazine p{
+        font-size: 22px;
+    }
+    .body-container4{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .body-container4 p,
+    .body-container4 a{
+        font-size: 80%;
+    }
+}

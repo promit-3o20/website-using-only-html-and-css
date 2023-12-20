@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgoldenrodyellow;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+/* ################## UTILITY CLASS ############### */
+.headding{
+    background: goldenrod;
+    width: 100%;
+    text-align: center;
+    color: maroon;
+}
+
+/* ################## NAVIGATION BAR ################## */
+
+.navbar input[type='checkbox'],
+.navbar .hamburger-lines{
+    display: none;
+}
+.navbar{
+    box-shadow: 0 0 8px #5c3c00,
+                0 0 8px #746201;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: rgba(218, 165, 32, 0.808);
+}
+.navbar-container{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+}
+.logo img{
+    width: 120px;
+}
+.menu-items{
+    display: flex;
+}
+.menu-items li{
+    font-size: 24px;
+    margin: 2px 2%;
+}
+.menu-items li a{
+    transition: all .3s ease 0s;
+    color: maroon;
+    font-size: 22px;
+    border-radius: 6px;
+    margin: 2px 2px;
+    padding: 3px;
+}
+.menu-items li a:hover{
+    color: rgb(65, 49, 0);
+    box-shadow: 0 0 8px #5c3c00,
+                0 0 8px #746201;
+    
+}
+/* .btn{
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(252, 200, 59);
+    transition: all .3s ease 0s;
+    font-weight: bold;
+}
+.btn a{
+    color: maroon;
+    font-size: 18px;
+}
+.btn:hover{
+    background-color: rgb(235, 180, 1);
+    box-shadow: 0 0 8px #5c3c00,
+                0 0 8px #746201; 
+} */
+
+/* ################## HEADER AREA ################## */
+
+.header-contant{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(360deg,black,transparent),url("../imgs/member-form page.png");
+    background-size: cover;
+    background-position: center;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.header-container h1{
+    color: rgb(255, 214, 111);
+    font-size: 70px;
+    text-transform: uppercase;
+}
+/* BODY */
+.membership-box{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+iframe{
+    border: none;
+    background-color: rgba(253, 232, 112, 0.822);
+    border-radius: 13px;
+    
+}
+
+/* ################### FOOTER ################## */
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+}
+.social-media-icon i{
+    color: rgb(247, 207, 107);
+    margin: 5px;
+    align-items: center;
+    padding-top: 10px;
+}
+footer p{
+    color: rgb(247, 207, 107);
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+
+
+/* ########################## MEDIA QUERY ###################### */
+@media (max-width:900px){
+    /* navbar  */
+    .navbar{
+        background: rgba(218, 165, 32, 0.95);
+    }
+    .navbar-container input[type='checkbox'],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+    .navbar-container input[type='checkbox']{
+        position: absolute;
+        display: block;
+        height: 24px;
+        width: 32px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    }
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: rgb(82, 59, 2);
+    }
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .menu-items{
+        padding-top: 90px;
+        background: rgba(218, 165, 32, 0.884);
+        height: 100vh;
+        max-width: 280px;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform  0.5s ease-in-out;
+        box-shadow: 5px 0 10px 0 #5c3c00;
+    }
+    .menu-items li{
+        margin-bottom: 1rem ;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    .logo{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+    }
+    .navbar-container input[type='checkbox']:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line2{
+        transform: scaleX(0);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+    /* footer  */
+    footer p{
+        font-size: 15px;
+    }
+}
